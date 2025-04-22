@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - Mi Sitio</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+
+  <!-- Navbar -->
+  
+  <div class="navbar bg-green-700 shadow-sm">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a href="index.html" class="text-blue-600">Inicio</a></li>
+              <li><a href="hacer.html" class="hover:text-blue-600">¿Qué hacer?</a></li>
+              <li><a href="recursos.html" class="hover:text-blue-600">Recursos</a></li>
+              <li><a href="acercade.html" class="hover:text-blue-600">Acerca de mi</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-ghost text-xl">Sanae</a>
+    </div>
+
+    <div class="navbar-center hidden lg:flex lg:justify-center font-semibold">
+      <ul class="menu menu-horizontal px-1 absolute">
+        <li><a href="index.html" class="text-blue-400">Inicio</a></li>
+        <li><a href="hacer.html" class="hover:text-blue-400">¿Qué hacer?</a></li>
+        <li><a href="recursos.html" class="hover:text-blue-400">Recursos</a></li>
+        <li><a href="acercade.html" class="hover:text-blue-400">Acerca de mi</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero -->
+
+  <div
+  class="hero min-h-screen"
+  style="background-image: url(assets/5-120821-nevado-as23.jpg);">
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-8xl font-bold">Sanae</h1>
+        <p class="mb-5 text-2xl">
+          Es el momento de actuar
+        </p>
+        <a href="#pagina" class="btn btn-primary">
+          Conocer mas
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Texto -->
+
+  <h1 id="pagina" class="mt-16 mb-4 text-center text-4xl font-bold text-black">Mexico es de lo mas biodiversos, pero tambien descuidados</h1>
+  <h2 class="mb-4 ml-4 mr-4 text-center text-2xl font-semibold text-black">De 2001 a 2023, México perdió 4.89 Mha de cobertura arbórea, lo que equivale a una disminución del 9.2% de la cobertura arbórea desde 2000, y al 2.01 Gt de las emisiones de CO₂.</h2>
+  <h3 class="mb-16 text-center text-2xl font-extrabold text-black">Esto es solo hablando en el rubro forestal</h3>
+
+  <!-- Cartas -->
+
+  <div class="grid grid-cols-3 gap-4 m-8">
+    <div class="card bg-base-100 w-96 shadow-sm col-span-1">
+      <figure class="h-60">
+        <img
+          class="object-cover w-full h-full"
+          src="assets\tren.webp"
+          alt="Tren" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Tren maya</h2>
+        <p>Pese a tantas advertencias, el daño ambiental por construir un tren, fue de 7 millones de arboles</p>
+        <div class="card-actions justify-end">
+          <a href="https://www.xataka.com.mx/ecologia-y-naturaleza/cinco-anos-despues-siete-millones-arboles-gobierno-mexico-reconoce-danos-ambientales-tren-maya" class="btn btn-primary" target="_blank">
+            Conocer mas
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 w-96 shadow-sm col-span-1">
+      <figure class="h-60">
+        <img
+          class="object-cover w-full h-full"
+          src="assets\relego.jpg"
+          alt="Peces" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">2024: El sexenio que se relego la protección ambiental</h2>
+        <p>Entre proyectos que afectaron el ambiente con su privilegio y el escaso presupuesto</p>
+        <div class="card-actions justify-end">
+          <a href="https://es.mongabay.com/2024/12/balance-ambiental-mexico-2024-fin-sexenio-que-relego-proteccion-bienes-naturales/" class="btn btn-primary" target="_blank">
+            Conocer mas
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 w-96 shadow-sm col-span-1">
+      <figure class="h-60">
+        <img
+          class="object-cover w-full h-full"
+          src="assets\pesca.jpg"
+          alt="Pesca" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Pesca</h2>
+        <p>La pesca ilegal se da tan facil que es un 40% de la que es legal</p>
+        <div class="card-actions justify-end">
+          <a href="https://www.eluniversal.com.mx/nacion/40-de-la-pesca-ilegal-en-mexico-se-comercializa-como-legal-alerta-ong-pide-consumo-responsable-de-mariscos-en-semana-santa/" class="btn btn-primary" target="_blank">
+            Conocer mas
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+
+  <div class="hero bg-base-200">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <img
+        src="assets\ong.jpg"
+        class="max-w-sm rounded-lg shadow-2xl"
+      />
+      <div>
+        <h1 class="text-5xl font-bold">Organizaciones</h1>
+        <p class="py-6">
+          ¿Quieres ayudar?, ¡estas son algunas ONG que combaten los problemas ambientales!
+        </p>
+        <a href="https://www.portalambiental.com.mx/directorio/academia-y-sociedad/ongs" class="btn btn-primary" target="_blank">
+          Conocer mas
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
