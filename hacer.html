@@ -3,24 +3,180 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Acerca - Mi Sitio</title>
+  <title>Sanae</title>
+  <link rel="icon" href="/src/assets/Sanaeicon.webp">
   <link href="./src/output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-800">
 
-  <nav class="bg-white shadow p-4">
-    <div class="flex space-x-4 justify-center font-semibold">
-      <a href="index.html" class="text-blue-600">Inicio</a>
-      <a href="hacer.html" class="hover:text-blue-600">¿Qué hacer?</a>
-      <a href="recursos.html" class="hover:text-blue-600">Recursos</a>
-      <a href="acercade.html" class="hover:text-blue-600">Acerca de mi</a>
+
+<body class="bg-white mb-4">
+
+  <!-- Navbar -->
+  
+  <div class="navbar bg-green-700 shadow-sm">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a href="index.html" class="text-blue-600">Inicio</a></li>
+              <li><a href="hacer.html" class="hover:text-blue-600">¿Qué hacer?</a></li>
+              <li><a href="recursos.html" class="hover:text-blue-600">Recursos y ONG</a></li>
+              <li><a href="acercade.html" class="hover:text-blue-600">Acerca de mi</a></li>
+        </ul>
+      </div>
+      <img
+          class="w-30"
+          src="src\assets\Sanae.png"
+          alt="Sanae" />
     </div>
-  </nav>
 
-  <main class="max-w-3xl mx-auto py-16 px-4">
-    <h1 class="text-3xl font-bold mb-6">Sobre mí</h1>
-    <p>Aquí puedes contar tu historia, estudios, experiencia, etc.</p>
-  </main>
+    <div class="navbar-center hidden lg:flex lg:justify-center font-semibold">
+      <ul class="menu menu-horizontal px-1 absolute">
+        <li><a href="index.html" class="text-blue-400">Inicio</a></li>
+        <li><a href="hacer.html" class="hover:text-blue-400">¿Qué hacer?</a></li>
+        <li><a href="recursos.html" class="hover:text-blue-400">Recursos</a></li>
+        <li><a href="acercade.html" class="hover:text-blue-400">Acerca de</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-end">
+      <a href="https://github.com/Gaia74/Sanae-2" class="btn btn-info" target="_blank">
+        Git hub
+      </a>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 m-4">
+    <div class="card bg-base-100 w-full shadow-sm">
+      <figure class="h-60">
+        <img
+          class="object-cover w-full h-full"
+          src="src\assets\tren.webp"
+          alt="Tren" />
+      </figure> 
+      <div class="card-body">
+        <h2 class="card-title">Tren maya</h2>
+        <p>Se dice que el daño ambiental por la construcción del tren fue de 7 millones de arboles</p>
+        <div class="card-actions justify-end">
+          <a href="https://www.xataka.com.mx/ecologia-y-naturaleza/cinco-anos-despues-siete-millones-arboles-gobierno-mexico-reconoce-danos-ambientales-tren-maya" class="btn btn-primary" target="_blank">
+            Conocer mas
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 w-full shadow-sm">
+      <figure class="h-60">
+        <img
+          class="object-cover w-full h-full"
+          src="src\assets\relego.jpg"
+          alt="Peces" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">2024: El sexenio que se relego la protección ambiental</h2>
+        <p>Entre proyectos que afectaron el ambiente con su privilegio y el escaso presupuesto, se dice que este sexenio relego la protección ambiental</p>
+        <div class="card-actions justify-end">
+          <a href="https://es.mongabay.com/2024/12/balance-ambiental-mexico-2024-fin-sexenio-que-relego-proteccion-bienes-naturales/" class="btn btn-primary" target="_blank">
+            Conocer mas
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 w-full shadow-sm">
+      <figure class="h-60">
+        <img
+          class="object-cover w-full h-full"
+          src="src\assets\pesca.jpg"
+          alt="Pesca" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Pesca</h2>
+        <p>Especulaciones y predicciones temen que hasta un 40% de la pesca sea ilegal</p>
+        <div class="card-actions justify-end">
+          <a href="https://www.eluniversal.com.mx/nacion/40-de-la-pesca-ilegal-en-mexico-se-comercializa-como-legal-alerta-ong-pide-consumo-responsable-de-mariscos-en-semana-santa/" class="btn btn-primary" target="_blank">
+            Conocer mas
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
+
+<!-- Footer-->
+
+<footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+  <nav>
+    <h6 class="footer-title">Tecnologias</h6>
+    <a target="_blank" href="https://github.com/Gaia74" class="link link-hover">Git hub</a>
+    <a target="_blank" href="https://github.com/Gaia74/Sanae-2" class="link link-hover">Repositorio de esta pagina</a>
+    <a target="_blank" href="https://tailwindcss.com/" class="link link-hover">Tailwind</a>
+    <a target="_blank" href="https://daisyui.com/" class="link link-hover">DaisyUI</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">BBVA</h6>
+    <a target="_blank" href="https://www.fundacionbbva.mx/" class="link link-hover">Fundacion BBVA</a>
+    <a target="_blank" href="https://www.fundacionbbva.mx/becas-bbva-para-chavos-que-inspiran/" class="link link-hover">Chavos que inspiran</a>
+    <a target="_blank" href="https://www.facebook.com/FundacionBBVA" class="link link-hover">Facebook de la Fundacion</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Legal</h6>
+    <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/deed.en" class="link link-hover">Terminos de uso</a>
+  </nav>
+</footer>
+<footer class="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
+  <aside class="grid-flow-col items-center">
+    <img
+          class="w-30"
+          src="src\assets\Sanae.png"
+          alt="Sanae" />
+    <p>
+      Sanae
+      <br />
+      hosteada desde github pages
+    </p>
+  </aside>
+  <nav class="md:place-self-center md:justify-self-end">
+    <div class="grid grid-flow-col gap-4">
+      <a target="_blank" href="https://x.com/home">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+        </svg>
+      </a>
+      <a target="_blank" href="https://www.youtube.com/">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+        </svg>
+      </a>
+      <a target="_blank" href="https://www.facebook.com/">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+</footer>
 </html>
