@@ -1401,6 +1401,12 @@
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
   }
+  .footer-title {
+    margin-bottom: calc(0.25rem * 2);
+    text-transform: uppercase;
+    opacity: 60%;
+    font-weight: 600;
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -1470,6 +1476,29 @@
     align-items: center;
     padding: 0.5rem;
     min-height: 4rem;
+  }
+  .footer {
+    display: grid;
+    width: 100%;
+    grid-auto-flow: row;
+    place-items: start;
+    column-gap: calc(0.25rem * 4);
+    row-gap: calc(0.25rem * 10);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    & > * {
+      display: grid;
+      place-items: start;
+      gap: calc(0.25rem * 2);
+    }
+    &.footer-center {
+      grid-auto-flow: column dense;
+      place-items: center;
+      text-align: center;
+      & > * {
+        place-items: center;
+      }
+    }
   }
   .navbar-end {
     display: inline-flex;
@@ -1681,8 +1710,27 @@
     background-repeat: no-repeat;
     background-position-x: -50%;
   }
+  .link {
+    cursor: pointer;
+    text-decoration-line: underline;
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
+      @media (forced-colors: active) {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+      }
+    }
+    &:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
+  }
   .resize {
     resize: both;
+  }
+  .grid-flow-col {
+    grid-auto-flow: column;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1692,6 +1740,9 @@
   }
   .flex-wrap {
     flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
   }
   .items-end {
     align-items: flex-end;
@@ -1740,11 +1791,21 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-base-300 {
+    border-color: var(--color-base-300);
+  }
   .bg-base-100 {
     background-color: var(--color-base-100);
   }
   .bg-base-200 {
     background-color: var(--color-base-200);
+  }
+  .bg-base-300 {
+    background-color: var(--color-base-300);
   }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
@@ -1752,8 +1813,14 @@
   .bg-green-700 {
     background-color: var(--color-green-700);
   }
+  .bg-neutral {
+    background-color: var(--color-neutral);
+  }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .fill-current {
+    fill: currentcolor;
   }
   .stroke-current {
     stroke: currentcolor;
@@ -1773,6 +1840,9 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
   .menu-title {
     padding-inline: calc(0.25rem * 3);
     padding-block: calc(0.25rem * 2);
@@ -1788,6 +1858,12 @@
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
@@ -1837,6 +1913,9 @@
   .text-wrap {
     text-wrap: wrap;
   }
+  .text-base-content {
+    color: var(--color-base-content);
+  }
   .text-black {
     color: var(--color-black);
   }
@@ -1851,6 +1930,14 @@
   }
   .text-neutral-content {
     color: var(--color-neutral-content);
+  }
+  .link-hover {
+    text-decoration-line: none;
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
   }
   .underline {
     text-decoration-line: underline;
@@ -1921,9 +2008,27 @@
       }
     }
   }
+  .sm\:footer-horizontal {
+    @media (width >= 40rem) {
+      grid-auto-flow: column;
+      &.footer-center {
+        grid-auto-flow: row dense;
+      }
+    }
+  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:place-self-center {
+    @media (width >= 48rem) {
+      place-self: center;
+    }
+  }
+  .md\:justify-self-end {
+    @media (width >= 48rem) {
+      justify-self: flex-end;
     }
   }
   .lg\:flex {
@@ -1939,6 +2044,11 @@
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-4 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .lg\:flex-row-reverse {
