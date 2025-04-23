@@ -7,7 +7,7 @@
   <link href="./src/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-white">
+<body class="bg-white mb-4">
 
   <!-- Navbar -->
   
@@ -26,7 +26,10 @@
               <li><a href="acercade.html" class="hover:text-blue-600">Acerca de mi</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl">Sanae</a>
+      <img
+          class="w-30"
+          src="src\assets\Sanae.png"
+          alt="Sanae" />
     </div>
 
     <div class="navbar-center hidden lg:flex lg:justify-center font-semibold">
@@ -36,6 +39,12 @@
         <li><a href="recursos.html" class="hover:text-blue-400">Recursos</a></li>
         <li><a href="acercade.html" class="hover:text-blue-400">Acerca de mi</a></li>
       </ul>
+    </div>
+
+    <div class="navbar-end">
+      <a href="https://github.com/Gaia74/Sanae-2" class="btn btn-info" target="_blank">
+        Git hub
+      </a>
     </div>
   </div>
 
@@ -47,7 +56,10 @@
     <div class="hero-overlay"></div>
     <div class="hero-content text-neutral-content text-center">
       <div class="max-w-md">
-        <h1 class="mb-5 text-8xl font-bold">Sanae</h1>
+        <img
+          class="w-80"
+          src="src\assets\Sanae.png"
+          alt="Sanae" />
         <p class="mb-5 text-2xl">
           Es el momento de actuar
         </p>
@@ -76,7 +88,7 @@
       </figure> 
       <div class="card-body">
         <h2 class="card-title">Tren maya</h2>
-        <p>Pese a tantas advertencias, el daño ambiental por construir un tren, fue de 7 millones de arboles</p>
+        <p>Se dice que el daño ambiental por la construcción del tren fue de 7 millones de arboles</p>
         <div class="card-actions justify-end">
           <a href="https://www.xataka.com.mx/ecologia-y-naturaleza/cinco-anos-despues-siete-millones-arboles-gobierno-mexico-reconoce-danos-ambientales-tren-maya" class="btn btn-primary" target="_blank">
             Conocer mas
@@ -94,7 +106,7 @@
       </figure>
       <div class="card-body">
         <h2 class="card-title">2024: El sexenio que se relego la protección ambiental</h2>
-        <p>Entre proyectos que afectaron el ambiente con su privilegio y el escaso presupuesto</p>
+        <p>Entre proyectos que afectaron el ambiente con su privilegio y el escaso presupuesto, se dice que este sexenio relego la protección ambiental</p>
         <div class="card-actions justify-end">
           <a href="https://es.mongabay.com/2024/12/balance-ambiental-mexico-2024-fin-sexenio-que-relego-proteccion-bienes-naturales/" class="btn btn-primary" target="_blank">
             Conocer mas
@@ -112,7 +124,7 @@
       </figure>
       <div class="card-body">
         <h2 class="card-title">Pesca</h2>
-        <p>La pesca ilegal se da tan facil que es un 40% de la que es legal</p>
+        <p>Especulaciones y predicciones temen que hasta un 40% de la pesca sea ilegal</p>
         <div class="card-actions justify-end">
           <a href="https://www.eluniversal.com.mx/nacion/40-de-la-pesca-ilegal-en-mexico-se-comercializa-como-legal-alerta-ong-pide-consumo-responsable-de-mariscos-en-semana-santa/" class="btn btn-primary" target="_blank">
             Conocer mas
@@ -141,6 +153,66 @@
       </div>
     </div>
   </div>
+
+  <!-- Cartas 2-->
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 m-4">
+    <div class="card bg-base-100 w-full shadow-sm">
+      <figure class="h-60">
+        <img
+          class="object-cover w-full h-full"
+          src="src\assets\Agua.png"
+          alt="Tren" />
+      </figure> 
+      <div class="card-body">
+        <h2 class="card-title">Crisis de agua</h2>
+        <p>Pérdida de millones de litros en la escasez, la sobreexplotación, la contaminación</p>
+        <div class="card-actions justify-end">
+          <a href="https://elpais.com/mexico/2024-06-16/la-crisis-del-agua-lleva-al-limite-a-ciudad-de-mexico.html" class="btn btn-primary" target="_blank">
+            Conocer mas
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 w-full shadow-sm">
+      <figure class="h-60">
+        <img
+          class="object-cover w-full h-full"
+          src="src\assets/ozono.jpg"
+          alt="Peces" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">CDMX y contaminación aerea</h2>
+        <p>La capital de la ciudad se ahoga en una contaminación que va en aumento</p>
+        <div class="card-actions justify-end">
+          <a href="https://unamglobal.unam.mx/global_revista/en-aumento-las-contingencias-ambientales-en-cdmx-y-area-metropolitana/" class="btn btn-primary" target="_blank">
+            Conocer mas
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 w-full shadow-sm">
+      <figure class="h-60">
+        <img
+          class="object-cover w-full h-full"
+          src="src\assets\sequia.jpg"
+          alt="Pesca" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Sequias</h2>
+        <p>Desde 2022, las sequias asolan el territorio mexicano afectando hasta un 65% de todo el territorio en diferentes grados</p>
+        <div class="card-actions justify-end">
+          <a href="https://unamglobal.unam.mx/global_revista/consecuencias-de-la-sequia-en-mexico/" class="btn btn-primary" target="_blank">
+            Conocer mas
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </body>
 
 </html>
