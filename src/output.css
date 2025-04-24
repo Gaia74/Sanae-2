@@ -19,26 +19,17 @@
     --color-emerald-800: oklch(43.2% 0.095 166.913);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-600: oklch(54.6% 0.245 262.881);
-    --color-gray-50: oklch(98.5% 0.002 247.839);
-    --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-sm: 24rem;
     --container-md: 28rem;
-    --container-3xl: 48rem;
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
-    --text-8xl: 6rem;
-    --text-8xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -663,6 +654,9 @@
       isolation: isolate;
     }
   }
+  .visible {
+    visibility: visible;
+  }
   .toast {
     position: fixed;
     inset-inline-start: auto;
@@ -1207,17 +1201,8 @@
   .sticky {
     position: sticky;
   }
-  .inset-0 {
-    inset: calc(var(--spacing) * 0);
-  }
-  .inset-0\.5 {
-    inset: calc(var(--spacing) * 0.5);
-  }
   .top-0 {
     top: calc(var(--spacing) * 0);
-  }
-  .top-0\.5 {
-    top: calc(var(--spacing) * 0.5);
   }
   .hero-content {
     isolation: isolate;
@@ -1293,17 +1278,8 @@
       cursor: not-allowed;
     }
   }
-  .-z-1 {
-    z-index: calc(1 * -1);
-  }
-  .z-0 {
-    z-index: 0;
-  }
   .z-1 {
     z-index: 1;
-  }
-  .z-50 {
-    z-index: 50;
   }
   .hero {
     display: grid;
@@ -1325,11 +1301,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-neutral) 50%, transparent);
     }
-  }
-  .drawer-content {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    min-width: calc(0.25rem * 0);
   }
   .m-4 {
     margin: calc(var(--spacing) * 4);
@@ -1656,9 +1627,6 @@
   .hidden {
     display: none;
   }
-  .inline-block {
-    display: inline-block;
-  }
   .table {
     display: table;
   }
@@ -1668,20 +1636,8 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
-  .h-30 {
-    height: calc(var(--spacing) * 30);
-  }
-  .h-40 {
-    height: calc(var(--spacing) * 40);
-  }
-  .h-50 {
-    height: calc(var(--spacing) * 50);
-  }
   .h-60 {
     height: calc(var(--spacing) * 60);
-  }
-  .h-70 {
-    height: calc(var(--spacing) * 70);
   }
   .h-full {
     height: 100%;
@@ -1709,9 +1665,6 @@
   }
   .max-w-sm {
     max-width: var(--container-sm);
-  }
-  .min-w-screen {
-    min-width: 100vw;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -1763,9 +1716,6 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1777,9 +1727,6 @@
   }
   .items-center {
     align-items: center;
-  }
-  .justify-center {
-    justify-content: center;
   }
   .justify-end {
     justify-content: flex-end;
@@ -1828,20 +1775,8 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-emerald-300 {
-    background-color: var(--color-emerald-300);
-  }
   .bg-emerald-400 {
     background-color: var(--color-emerald-400);
-  }
-  .bg-green-100 {
-    background-color: var(--color-green-100);
-  }
-  .bg-green-200 {
-    background-color: var(--color-green-200);
-  }
-  .bg-green-300 {
-    background-color: var(--color-green-300);
   }
   .bg-green-500 {
     background-color: var(--color-green-500);
@@ -1934,12 +1869,6 @@
   .text-blue-600 {
     color: var(--color-blue-600);
   }
-  .text-emerald-700 {
-    color: var(--color-emerald-700);
-  }
-  .text-emerald-800 {
-    color: var(--color-emerald-800);
-  }
   .text-neutral-content {
     color: var(--color-neutral-content);
   }
@@ -1993,10 +1922,6 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
-  }
-  .ease-out {
-    --tw-ease: var(--ease-out);
-    transition-timing-function: var(--ease-out);
   }
   .btn-outline {
     &:not( .btn-active, :hover, :active:focus, :focus-visible, :disabled, [disabled], .btn-disabled, :checked ) {
